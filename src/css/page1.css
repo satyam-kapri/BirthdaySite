@@ -1,0 +1,102 @@
+.tree{
+    position: relative;
+    width: 494px;
+    right: -376px;
+    top: -146px;
+  }
+  .heading{
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+      top: 8rem;
+      left: 10rem;
+      font-size: 6rem;
+      text-align: left;
+      line-height: 1;
+      color: white;
+  }
+  .cloud{
+    position: absolute;
+    top: 0;
+    width: 224px;
+  }
+  .cloud2{
+    position: absolute;
+    width: 189px;
+    top: 45px;
+    left: 40vw;
+    z-index: 2;
+  
+  }
+  .girl{
+    position: absolute;
+    width: 300px;
+    transform: scaleX(-1);
+  }
+  .boy{
+    
+    width: 348px;
+   
+  }
+  .message{
+    background: url('../assets/message.png');
+    position: relative;
+    top: -567px;
+    left: 200px;
+    background-size: cover;
+    width: 386px;
+    height: 273px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+  .replymessage{
+    background: url('../assets/message.png');
+    position: relative;
+    top: -799px;
+    left: 703px;
+    background-size: cover;
+    width: 386px;
+    height: 273px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+  }
+  .boyouter{
+    position: relative;
+    top: -528px;
+  }
+
+.button-87 {
+  margin: 10px;
+  /* padding: 15px 30px; */
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 400;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-87:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-87:active {
+  transform: scale(0.95);
+}

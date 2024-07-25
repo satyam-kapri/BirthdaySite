@@ -1,0 +1,51 @@
+.car{
+    width: 500px;
+}
+.tyre{
+    position: relative;
+    left: -279px;
+    top: -30px;
+animation: tyre 0.1s 1s forwards 35;
+width: 126px;
+}
+.tyre2{
+    position: relative;
+    left: -605px;
+    top: -54px;
+animation: tyre 0.1s 1s forwards 35;
+width: 89px;
+}
+@keyframes tyre {
+    100%{
+     transform:rotate(360deg);
+    }
+
+}
+
+.carouter{
+    z-index: 2;
+    position: relative;
+    animation: moving 5s forwards 1;
+    left: var(--left);
+    bottom: -52vh;
+    width: 715px;
+    
+}
+@keyframes moving {
+    100%{
+        transform:translate(var(--translate));
+    }
+}
+.carouter::after{
+    content: '';
+
+    position: relative;
+    display: block;
+    bottom: 60px;
+    left: -106px;
+width: 498px;
+z-index: -1;
+height: 16px;
+  background: #c12f0326;;
+transform: skew(-84deg, 2deg);
+}

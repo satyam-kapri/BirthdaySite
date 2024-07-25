@@ -1,0 +1,63 @@
+#gift-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 20;
+    background: rgb(254,89,89);
+background: radial-gradient(circle, rgba(254,89,89,1) 0%, rgba(253,35,35,1) 50%, rgba(234,0,0,1) 75%, rgba(121,0,15,1) 100%);
+   color: white;
+}
+.happybirthday{
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6rem;
+    text-align: left;
+    line-height: 1;
+    top: 6rem;
+    left: 23rem;
+    position: relative;
+}
+.cake{
+    width: 261px;
+    height: 261px;
+    position: relative;
+    top: 10rem;
+}
+
+.momo{
+    width: 117px;
+    position: relative;
+    top: 117px;
+}
+.momotext{
+    position: absolute;
+    bottom: 10px;
+    left: 45vw;
+}
+.balloons{
+    width: 300px;
+    position: absolute;
+
+    top: 100vh;
+    animation: fly 6s forwards 1;
+}
+@keyframes fly {
+    100%{
+        transform: translateY(-100vh);
+    }
+}
+.saniya{
+    position: absolute;
+    width: 364px;
+    top: 100px;
+    left: 38vw;
+}
+.crown{
+    width: 200px;
+    position: absolute;
+    top: 22px;
+    left: 43vw;
+}

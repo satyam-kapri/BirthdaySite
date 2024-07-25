@@ -1,0 +1,47 @@
+.page3{
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(178,134,233);
+background: radial-gradient(circle, rgba(178,134,233,1) 0%, rgba(159,137,249,1) 33%, rgba(97,30,238,1) 78%, rgba(70,0,186,1) 100%);
+}
+.girl3{
+    position: absolute;
+    width: 300px;
+    transform: scaleX(1) translate(-432px, 40px);
+}
+.boy3{
+    width: 348px;
+    transform: scaleX(-1) translate(-48px, -7px);
+}
+.gift{
+    right: 24vw;
+    width: 232px;
+    position: absolute;
+    top: 71vh;
+    z-index: 3;
+    cursor: pointer;
+}
+.message3{
+    background: url('../assets/message.png');
+    position: relative;
+    top: -567px;
+    background-size: cover;
+    width: 386px;
+    height: 273px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    left: 732px;
+}
+.blackout{
+    width: 400vw;
+    height: 300vh;
+    top: -100vh;
+    left: -100vw;
+    position: absolute;
+   background: black;
+    z-index: 20;
+border-radius: 40%;}
