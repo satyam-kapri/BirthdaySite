@@ -37,7 +37,7 @@ function Page3({result}) {
     <img src={boy} alt="" srcset="" className='boy3'/>
     <img src={girl} alt="" srcset="" className='girl3'/>
     <div className='message3'>
-       See! This is your gift <br></br> Open it Now
+       See! This is your gift <br></br> Open it Now<br></br>(click it)
     </div>
      </motion.div>
      {

@@ -36,12 +36,3 @@ background: radial-gradient(circle, rgba(178,134,233,1) 0%, rgba(159,137,249,1) 
     color: black;
     left: 732px;
 }
-.blackout{
-    width: 400vw;
-    height: 300vh;
-    top: -100vh;
-    left: -100vw;
-    position: absolute;
-   background: black;
-    z-index: 20;
-border-radius: 40%;}

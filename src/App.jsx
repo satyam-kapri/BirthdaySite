@@ -9,6 +9,9 @@ import song from './assets/sham.mp3'
 
 function App() {
  
+    function playaudio(){
+    document.getElementById('audio').play();}
+ 
   const [result, setResult] = useState({
     score: 0,
     correctAnswers: 0,
@@ -16,16 +19,15 @@ function App() {
   })
   const location = useLocation();
   return (<>
-    <audio autoPlay>
-    <source src={song} type="audio/mpeg" />
-    Your browser does not support the audio element.
-  </audio>
+    
+     <audio id='audio' src={song} autoPlay={true} loop>
+     </audio>
+
     <AnimatePresence >
     <Routes location={location} key={location.pathname} >
-      <Route path="/" element={<Page1></Page1>} />
+      <Route path="/" element={<Page1 playaudio={playaudio}></Page1>} />
       <Route path="/page2" element={<Page2 result={result} setResult={setResult}></Page2>} />
       <Route path="/page3" element={<Page3 result={result} ></Page3>} />
-      
     </Routes>
   </AnimatePresence>
   </>
