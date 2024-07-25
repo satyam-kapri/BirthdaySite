@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import { quiz } from './questions'
 import '../css/quiz.css'
-import chef from '../assets/chef.png'
+// import chef from '../assets/chef.png'
 import { Link } from 'react-router-dom'
+import { useImages } from '../ImageContext'
 const Quiz = ({result,setResult}) => {
+  const {imagePaths}=useImages();
   const [activeQuestion, setActiveQuestion] = useState(0)
   const [selectedAnswer, setSelectedAnswer] = useState('')
   const [showResult, setShowResult] = useState(false)
@@ -45,7 +47,7 @@ const Quiz = ({result,setResult}) => {
 
   return (
     <>
-    <img src={chef} alt="" srcset="" className='chef'/>
+    <img src={imagePaths[4]} alt="" srcset="" className='chef'/>
     <div className="quiz-container">
       {!showResult ? (
         <div>

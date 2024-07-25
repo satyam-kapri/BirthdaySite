@@ -1,16 +1,17 @@
 import React, { useState } from 'react'
 import Car from './Car'
-import tree from '../assets/image-Photoroom.png'
+// import tree from '../assets/image-Photoroom.png'
 import cloud from '../assets/image 6.png'
 import girl from '../assets/image-removebg-preview (2).png'
 import boy from '../assets/pikaso_texttoimage_A-3d-illustration-of-handsome-and-healthy-boy-wear-removebg-preview.png'
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import gift from '../assets/giftbox.png'
+// import gift from '../assets/giftbox.png'
 import '../css/page3.css'
 import Gift from './Gift'
+import { useImages } from '../ImageContext'
 function Page3({result}) {
    const [showgift,setshowgift]=useState(false);
+   const {imagePaths}=useImages();
   return (
     <motion.div
     initial={{ opacity: 0 }}
@@ -20,11 +21,11 @@ function Page3({result}) {
     className='page3'
   >
        <Car left={'-182vh'} translate={'1441px'}></Car>
-     <img src={tree} alt="" srcset="" className='tree'/>
+     <img src={imagePaths[7]} alt="" srcset="" className='tree'/>
      <img src={cloud} alt="" srcset="" className='cloud'/>
      <img src={cloud} alt="" srcset="" className='cloud2'/>
    
-     <img src={gift} alt="" className='gift' onClick={()=>{setshowgift(true);}}/>
+     <img src={imagePaths[3]} alt="" className='gift' onClick={()=>{setshowgift(true);}}/>
      
      <div className='heading'>Its Time For<br></br>Your<br></br> Gift</div>
      

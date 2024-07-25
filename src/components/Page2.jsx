@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react'
 import '../css/page2.css'
 import { motion } from 'framer-motion';
 import Car from './Car';
-import shop from '../assets/Designer-Photoroom.png'
-import chef from '../assets/chef.png'
+// import shop from '../assets/Designer-Photoroom.png'
+// import chef from '../assets/chef.png'
 import Quiz from './Quiz';
+import { useImages } from '../ImageContext';
 function Page2({result,setResult}) {
     const [showquiz,setshowquiz]=useState(false);
+    const {imagePaths}=useImages();
   return (
     <motion.div
     initial={{ opacity: 0 }}
@@ -21,7 +23,7 @@ function Page2({result,setResult}) {
       {showquiz===true?
       <Quiz result={result} setResult={setResult}></Quiz>
       :<>
-      <img src={shop} alt="" srcset="" className='shop' />
+      <img src={imagePaths[1]} alt="" srcset="" className='shop' />
       <button className='button-33' onClick={()=>{setshowquiz(true);}}>Enter the restuarant</button>
       </>}
       <div className='heading'>Lets See Your<br></br> Love For<br></br> Food</div>
