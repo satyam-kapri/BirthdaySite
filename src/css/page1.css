@@ -113,5 +113,8 @@
   align-items: center;
   z-index: 30;
   flex-direction: column;
+  
+}
+.blackout span{
   font-size: 20px;
 }

@@ -1,14 +1,14 @@
-import { useEffect, useState } from 'react'
+import {  useState } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import './App.css'
 import Page1 from './components/Page1'
 import Page2 from './components/Page2'
 import Page3 from './components/Page3';
-import song from './assets/sham.mp3'
+import { useImages } from './ImageContext';
 
 function App() {
-  
+    const {imagePaths}=useImages();
     function playaudio(){
     document.getElementById('audio').play();}
  
@@ -20,7 +20,7 @@ function App() {
   const location = useLocation();
   return (<>
     
-     <audio id='audio' src={song} autoPlay={true} loop>
+     <audio id='audio' src={imagePaths[13]} autoPlay={true} loop>
      </audio>
 
     <AnimatePresence >

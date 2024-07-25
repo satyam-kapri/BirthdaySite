@@ -1,13 +1,10 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import '../css/gift.css'
-import cake from '../assets/cake.webp'
 import Confetti from 'react-confetti'
 import useWindowSize from "react-use/lib/useWindowSize";
 import { motion } from 'framer-motion';
-// import momos from '../assets/momos.png'
 import balloons from '../assets/balloons.png'
-// import saniya from '../assets/girl.png'
-import crown from '../assets/crown.png'
+
 import { useImages } from '../ImageContext';
 function Gift({result}) {
     const { width, height } = useWindowSize();
@@ -24,9 +21,9 @@ function Gift({result}) {
       height={height}
     />
      <img src={imagePaths[2]} className='saniya'></img>
-     <img src={crown} alt="" srcset="" className='crown'/>
+     <img src={imagePaths[10]} alt="" srcset="" className='crown'/>
        <div className='happybirthday'>Happy &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;birthday</div>
-      <img src={cake} alt="" srcset="" className='cake'/><br></br>
+      <img src={imagePaths[11]} alt="" srcset="" className='cake'/><br></br>
      
       <div>
        
