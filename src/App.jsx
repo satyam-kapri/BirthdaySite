@@ -5,7 +5,7 @@ import './App.css'
 import Page1 from './components/Page1'
 import Page2 from './components/Page2'
 import Page3 from './components/Page3';
-import song from './assets/Sham Aisha 128 Kbps.mp3'
+import song from './assets/sham.mp3'
 
 function App() {
  

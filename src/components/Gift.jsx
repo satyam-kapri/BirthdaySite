@@ -6,7 +6,7 @@ import useWindowSize from "react-use/lib/useWindowSize";
 import { motion } from 'framer-motion';
 import momos from '../assets/momos.png'
 import balloons from '../assets/balloons.png'
-import saniya from '../assets/WhatsApp Image 2024-07-25 at 17.24.51-Photoroom.png'
+import saniya from '../assets/girl.png'
 import crown from '../assets/crown.png'
 function Gift({result}) {
     const { width, height } = useWindowSize();
