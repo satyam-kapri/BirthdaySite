@@ -12,9 +12,9 @@ import img11 from './assets/crown.png';
 import img12 from './assets/cake.webp';
 import img13 from './assets/image 6.png';
 import song from './assets/sham.mp3'
-
-
-
+const img14 = 'https://sugaryums.com/wp-content/uploads/2023/03/Baechu-Kimchi-Cabbage-Kimchi-Recipe-SugarYums-17.jpg'
+const img15 = 'https://www.seriouseats.com/thmb/WtcBGMWbdUcAIVe8zg4VCm2aqc4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2020__01__20200122-gimbap-vicky-wasik-24-f5ed1075f35846a29e0812ee053a1bf8.jpg'
+const img16= 'https://img.veenaworld.com/wp-content/uploads/2021/12/Mandu.jpg'
 const imagePaths = [
   img1,
   img2,
@@ -29,7 +29,10 @@ const imagePaths = [
   img11,
   img12,
   img13,
-  song
+  song,
+  img14,
+  img15,
+  img16
   
 ];
 

@@ -56,7 +56,7 @@ const Quiz = ({result,setResult}) => {
             <span className="total-question">/{addLeadingZero(questions.length)}</span>
           </div>
           <h2>{question}</h2>
-          <img src={img} className='question-img'></img>
+          <img src={imagePaths[img]} className='question-img'></img>
           <ul>
             {choices.map((answer, index) => (
               <li
